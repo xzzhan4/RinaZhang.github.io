@@ -1,0 +1,46 @@
+:root{
+    --green: #293932;
+    --yellow: #f0ede0;
+}
+
+*{
+    font-family: "Helbetica Neueu", Helbetiva, Arial;
+}
+
+button{
+    font-family: "Arial Black";
+
+}
+
+.btn--Primary{
+    border: solid;
+    border-color: var(--green);
+    border-radius: 50px;
+    background-color: var(--green);
+    color:white;
+    padding: 10px 20px;
+    box-shadow: 3px 3px 4px ;
+    
+}
+
+.btn--Primary:hover{
+    border: none;
+    border-radius: 50px;
+    background-color: var(--green);
+    color:var(--yellow);
+    padding: 10px 20px;
+    box-shadow: none;
+ 
+    
+}
+
+.btn--Default{
+    border: solid;
+    border-color: var(--green);
+    
+    border-radius: 50px;
+    background-color: white;
+    color:var(--green);
+    padding: 10px 20px;
+    
+}
