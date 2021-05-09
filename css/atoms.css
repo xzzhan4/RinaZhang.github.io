@@ -1,7 +1,8 @@
 :root{
     --green: #293932;
     --yellow: #f0ede0;
-    --gray: #707070;
+    --gray: #BBC1BE;
+    --darkgray: #707070;
     --while: #ffffff;
     --lightyellow:#FDFCF5;
 }
@@ -43,6 +44,10 @@ a{
     text-decoration: none;
     color: var(--yellow);
     background-color: var(--green);
+    
+    
+    
+  
 }
 
 
@@ -122,7 +127,8 @@ button{
 
 .paragraph{
     font-size: 14px;
-    color: var(--gray);
+    color: var(--darkgray);
+    line-height: 1.4;
 }
 
 .showall{
@@ -170,6 +176,10 @@ button{
     width: 60px;
     height: 90px;
     margin-right: 6px;
+}
+
+.image--aboutus{
+    width:300px;
 }
 
 
