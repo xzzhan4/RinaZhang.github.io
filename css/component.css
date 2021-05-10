@@ -197,9 +197,6 @@ div.row--scroll>*+*{
     margin-right:18%;
 }
 
-
-
-
 .subcontainer--footer{
     background-color: var(--green);
     
@@ -211,9 +208,31 @@ div.row--scroll>*+*{
 
 .subcontainer--footer>*{
     color: var(--yellow);
-   
-
 }
+
+/* shopping cart */
+.cartheader{
+    width: 1000px;
+    height: fit-content;
+    background-color: var(--green);
+    color: var(--yellow);
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    padding: 0px;
+    margin-top:2px;
+    margin-bottom: 2px;
+    flex-wrap: nowrap;
+    font-weight: bold;
+}
+
+.cartheader>*{
+    background-color: var(--green);
+}
+
+
 
 
 
