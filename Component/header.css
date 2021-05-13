@@ -1,0 +1,200 @@
+:root{
+    --green: #293932;
+    --yellow: #f0ede0;
+    --gray: #BBC1BE;
+    --darkgray: #707070;
+    --white: #ffffff;
+    --lightyellow:#FDFCF5;
+}
+
+*{
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color:var(--white) !important;
+}
+
+
+
+li{
+    list-style-type: none;
+}
+
+
+.cluster{
+    display: flex;
+    flex-direction: row;
+}
+
+.container--header{
+    background-color: var(--green);
+    color: var(--yellow);
+    width: inherit;
+    min-width: 100%;
+    margin: 0;
+    padding-top: 14px;
+    /* padding: 10px; */
+  
+}
+
+.header--row1{
+    justify-content: flex-end;
+    margin-bottom: 12px;
+
+    margin-left: 12px;
+    margin-right: 24px;
+
+}
+
+.header--row1>div>a{
+    color: var(--yellow);
+ 
+ 
+  
+}
+
+.header--row1--child{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.header--row2{
+    justify-content: flex-end;
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 14px;
+    margin-right: 24px;
+}
+
+.header--row3{
+    justify-content: start;
+    flex-wrap: wrap;
+   
+    
+}
+
+.header--row3>*+*{
+    margin-right: 32px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+   
+}
+
+.header--row3>li>a{
+    color: var(--yellow);
+    font-weight: bolder;
+}
+
+
+
+.header--row2>input{
+    border-radius: 50px;
+    border: none;
+    border-color: white;
+    border-width: 1px;
+    background-color: var(--lightyellow);
+    padding: 8px 20px;
+    width: 70%;
+}
+
+.header--row2>button{
+    background-color: inherit;
+    color: var(--yellow);
+    margin-left: 4px;
+    border:none;
+    border-radius: 4px;
+    font-size: large;
+    /* border: 4px; */
+}
+
+.brand{
+    float: left; 
+    font-size: 2em;
+    margin-left: 24px;
+    font-weight: bold;
+
+}
+
+.menuside{
+    visibility: hidden;
+}
+
+.btn--menu{
+    margin-left: 24px;
+    margin-right: 6px;
+    color: var(--yellow);
+}
+
+
+
+
+@media screen and (max-width: 552px){
+    *{
+        margin:0;
+    }
+    .container--header{
+        width: 100%;
+    }
+
+
+    .header--row3{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+
+    .header--row1{
+        margin-right: 24px;
+    }
+
+    .header--hidden{
+       font-size: 0;
+        /* visibility: hidden; */
+    }
+
+    .fas{
+        font-size: large;
+    }
+
+    .header--row2>input{
+        border-radius: 50px;
+        border: none;
+        border-color: white;
+        border-width: 1px;
+        background-color: var(--lightyellow);
+        padding: 8px 20px;
+        width: 100%;
+        margin-left: 24px;
+   
+       
+    }
+
+    .menuside{
+        visibility:visible;
+    }
+
+    .brand{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+       
+    }
+
+    .header--row2{
+        margin-top: 12px;
+    }
+
+
+
+  
+
+
+  
+    
+}
+

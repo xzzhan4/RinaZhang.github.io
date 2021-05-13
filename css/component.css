@@ -22,6 +22,11 @@ ul{
     flex-direction: row;
 }
 
+.container--header{
+    width: 100%;
+    min-width: 100%;
+}
+
 .cluster--component{
     background-color: inherit;
     
@@ -49,6 +54,8 @@ ul{
     align-items: center;
     flex-direction: row;
     padding: 2px;
+    
+  
 
 
 }
@@ -71,14 +78,16 @@ ul{
 .nav--search{
     background-color: var(--green);
     width: 100%;
-    height: 60px;
+    height: 78px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content:space-between;
     align-items: center;
     flex-direction: row;
     padding: 2px;
     z-index: 1;
+    /* min-width: 750px; */
+
 }
 
 
@@ -104,7 +113,14 @@ ul{
     font-weight: bold;
     letter-spacing: 0.05rem;
     padding-top: 6px;
+    margin-bottom: 5px;
+ 
+    
+ 
+    
 }
+
+
 
 .categorybar>*+*{
     margin-right: 26px;
@@ -177,7 +193,7 @@ div.row--scroll>*+*{
 /* footer */
 .container--footer{
     
-    min-width: 600px;
+    min-width: 1000px;
     padding: 42px 84px;
     background-color: var(--green);
     position: relative;
@@ -185,7 +201,7 @@ div.row--scroll>*+*{
 
 .container--topfooter{
     
-    min-width: 600px;
+    min-width: 1000px;
     padding: 62px 84px;
     border-bottom: solid var(--darkgray) 1px;
     background-color: var(--green);
@@ -231,6 +247,8 @@ div.row--scroll>*+*{
 .cartheader>*{
     background-color: var(--green);
 }
+
+
 
 
 
