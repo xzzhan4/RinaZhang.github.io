@@ -10,8 +10,16 @@
 *{
     background: var(--yellow);
     font-family: "Helbetica Neueu", Helbetiva, Arial;
+    /* line-height: 22px; */
     
 }
+
+p{
+    line-height: 22px;
+}
+
+
+
 
 
 .container--homepage{
@@ -135,11 +143,16 @@ img{
     width: 940px;
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 28px; */
+    border: solid var(--yellow);
+    margin-top: 24px ;
+    padding-top: 12px;
+   
 }
 
 .container--singlelist{
-    margin-top: 28px;
+    border: solid;
+    border-color: var(--yellow);
+    margin-top: 40px;
 
 }
 
@@ -160,7 +173,116 @@ img{
    
 }
 
-@media screen and (max-width:552px){
+/* category */
+.container--categories{
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+    border: solid var(--yellow);
+}
+
+.container--cateimage>*+*{
+    margin-right: 20px;
+    margin-top: 8px;
+}
+
+.container--homeselectionbar>*{
+    border: solid var(--yellow);
+    margin-top: 10px;
+    padding-left: 0;
+    font-family: "Helvetica Neueu", Helvetica;
+    /* margin-bottom: 8px; */
+
+}
+
+.bottom--cateimage{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+
+
+button{
+    font-family: "Arial Black";
+
+}
+
+.btn--Primary{
+    border: solid;
+    border-color: var(--green);
+    border-radius: 5px;
+    background-color: var(--green);
+    color:var(--yellow);
+    padding: 10px 20px;
+  
+    /* box-shadow: 3px 3px 4px ; */
+    
+}
+
+.btn--homepage{
+    width: 30%;
+}
+
+
+
+.btn--Primary:hover{
+    border: solid;
+    border-color: var(--green);
+    color: white;
+    cursor: pointer;    
+}
+
+.container--categoriesmobile{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+
+
+
+/* about us */
+
+.container--aboutus{
+    width: 940px;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid var(--yellow);
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.container--inneraboutus{
+    margin-top: 16px;
+}
+
+.image--aboutus{
+    width: 300px;
+    height: 260px;
+}
+
+.container--aboutustext{
+    padding-left: 30px;
+}
+
+
+
+.font--aboutustitle{
+    color: var(--green);
+    font-size: 20px;
+    /* font-weight: bolder; */
+    margin-bottom: 20px;
+}
+
+.font--paragraph{
+    color: var(--darkgray);
+    margin-bottom: 40px;
+}
+
+
+@media screen and (max-width:567px){
     .container--hotbooks{
         width: 0;
         height: 0;
@@ -173,6 +295,7 @@ img{
         flex-direction: column !important;
         padding-right: 8%;
         padding-left: 8%;
+       
    
 
     }
@@ -198,6 +321,7 @@ img{
         width: 100%;
         /* margin-left: 8%; */
         margin-right: 8%;
+        padding-top: 0px;
 
     
        
@@ -212,6 +336,7 @@ img{
     .container--listimage{
         
         overflow: auto;
+   
         margin-left: 8%;
         margin-right: 8%;
     
@@ -224,10 +349,80 @@ img{
     .image--list{
         width: 120px !important;
         height: 180px !important;
+        box-shadow: 1px 1px 5px 2px var(--gray);
+        
     }
 
     .container--showmore{
         margin-right: 8%;
+    }
+
+    /* category */
+    .container--categories{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .container--categories>*{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .container--categories>*>*{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    .container--categoriesmobile{
+        width: auto;
+        height: auto;
+
+        margin-left: 8%;
+        margin-right: 8%;
+        visibility: visible;
+        margin-bottom: 52px;
+        
+    }
+
+    .container--homebtn{
+        justify-content: space-between;
+        margin-top: 12px;
+    }
+
+  
+
+   
+
+
+    /* aboutus */
+    .container--aboutus{
+        width: 92%;
+        padding-left: 8%;
+ 
+       
+    }
+
+    .container--inneraboutus{
+        flex-direction: column !important;
+    }
+
+    .container--aboutustext{
+        padding: 0;
+        width: 92%;
+        padding-top: 26px;
+    }
+
+    .image--aboutus{
+        width: 92%;
+        height: 160px;
+        
+    }
+
+    .font--aboutustitle{
+        margin-bottom: 12px;
     }
 
    

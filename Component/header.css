@@ -11,12 +11,27 @@
     margin:0;
 }
 
+
+
+
 a{
     text-decoration: none;
 }
 
 a:hover{
     color:var(--white) !important;
+}
+
+header>*{
+    background: var(--green);
+}
+
+header>*>*{
+    background: var(--green);
+}
+
+header>*>*>*{
+    background: var(--green);
 }
 
 
@@ -45,13 +60,23 @@ li{
 .header--row1{
     justify-content: flex-end;
     margin-bottom: 12px;
+    background: var(--green);
 
     margin-left: 12px;
     margin-right: 24px;
 
 }
 
+.header--row1>*{
+    background-color: var(--green);
+}
+
+.header--row1>*>*>*{
+    background-color: var(--green);
+}
+
 .header--row1>div>a{
+    background: var(--green);
     color: var(--yellow);
  
  
@@ -88,8 +113,12 @@ li{
 .header--row3>li>a{
     color: var(--yellow);
     font-weight: bolder;
+    background-color: var(--green);
 }
 
+.header--row2>*>*{
+    background-color: var(--green);
+}
 
 
 .header--row2>input{
@@ -114,9 +143,11 @@ li{
 
 .brand{
     float: left; 
-    font-size: 2em;
-    margin-left: 24px;
+    font-size: 2.5em;
+    margin-left: 8%;
     font-weight: bold;
+    color: var(--white);
+    font-family:cursive;
 
 }
 
@@ -133,7 +164,7 @@ li{
 
 
 
-@media screen and (max-width: 552px){
+@media screen and (max-width: 567px){
     *{
         margin:0;
     }
@@ -176,6 +207,15 @@ li{
 
     .menuside{
         visibility:visible;
+        background-color: var(--green);
+    }
+
+    .menuside>*{
+        background-color: var(--green);
+    }
+
+    .menuside>*>*{
+        background-color: var(--green);
     }
 
     .brand{

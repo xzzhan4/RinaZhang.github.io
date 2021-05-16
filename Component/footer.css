@@ -7,6 +7,24 @@
     --lightyellow:#FDFCF5;
 }
 
+footer>*>*{
+    background-color: var(--green);
+}
+
+footer>*>*>*{
+    background-color: var(--green);
+}
+
+footer>*>*>*>*{
+    background-color: var(--green);
+}
+
+footer>*>*>*>*>*{
+    background-color: var(--green);
+}
+
+
+
 .container--footer{
     background-color: var(--green);
 }
