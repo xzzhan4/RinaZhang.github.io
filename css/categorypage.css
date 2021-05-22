@@ -13,7 +13,7 @@
 
 .container--catetitle{
     margin-left: 8%;
-    margin-top: 20px;
+    margin-top: 26px;
 }
 
 .font--catetitle{
@@ -24,6 +24,8 @@
 
 .container--cateselectionbar{
     margin-top: 12px;
+    margin-right: 8%;
+    overflow: auto;
 }
 
 .container--cateselectionbar>*+*{
@@ -47,10 +49,10 @@
 
 /* header */
 .container--cateheader{
-    margin-top: 24px;
+    margin-top: 36px;
     margin-left: 8%;
     margin-right: 8% !important;
-    min-width: 1000px;
+    /* min-width: 1000px; */
 }
 
 .container--cateheadtertext{
@@ -62,7 +64,7 @@
     color: var(--green);
     font-weight: bolder;
     font-size: 14px;
-    width: 280px;
+    width: 240px;
     padding-left: 2%;
 
 }
@@ -90,7 +92,8 @@
 .container--catebody{
     margin-left: 8%;
     margin-right: 8%;
-    margin-top: 18px;
+    margin-top: 24px;
+    /* min-width: 1000px; */
 }
 
 .container--filterbar{
@@ -135,4 +138,220 @@
 
 
     
+}
+
+
+
+/* product list */
+.container--productlist{
+    /* border: solid; */
+    width: 100%;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    /* width: 800px; */
+}
+
+.container--productcard{
+    width: fit-content;
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 30px;
+
+}
+
+.image--list{
+    width: 150px;
+    height: 225px;
+    border-radius: 10px;
+    object-fit: cover;
+   
+}
+
+.container--author>p{
+    font-size: 12px;
+    color: var(--green);
+}
+
+.font--by{
+    color: var(--darkgray) !important;
+    margin-right: 4px;
+}
+
+.font--title{
+    font-weight: bolder;
+    color: var(--green);
+   
+}
+
+.font--price{
+    font-size: 20px;
+    color: var(--green);
+}
+
+.card--hr{
+    border: solid var(--yellow) 1px;
+    border-radius: 50px;
+    margin-top: 4px;
+    /* margin-bottom: 4px; */
+}
+
+.fa-shopping-cart{
+    cursor: pointer;
+  
+}
+
+/* page */
+.container--page{
+    /* float: right; */
+    margin-left: 8%;
+    margin-right: 8%;
+    color: var(--darkgray);
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-bottom: 60px;
+   
+
+}
+
+
+
+.container--page>*+*{
+    margin-left: 16px;
+}
+
+.color--gray{
+    color: var(--darkgray);
+}
+
+.color--gray:hover{
+    color: var(--darkgray) !important;
+    cursor: initial;
+}
+
+.color--green{
+    color: var(--green);
+}
+
+.container--star{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.mobilepage, .container--buttons{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+
+
+
+@media screen and (max-width:567px) {
+    .container--cateheader, .container--filterbar, .container--page{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        margin: 0;
+    
+    }
+
+    .container--productlist{
+        margin: 0;
+        justify-content: space-between;
+    }
+
+  
+
+    .container--productcard{
+        background-color: var(--white);
+        padding-top: 10px;
+        border-radius: 10px;
+        margin-bottom: 14px;
+        padding-bottom: 10px;
+    }
+
+    .container--productcard>*{
+        background: var(--white);
+    }
+
+    .container--productcard>*>*{
+        background: var(--white);
+    }
+
+    .image--list{
+        width: 130px;
+        height: 200px;
+    }
+
+    .card--hr{
+        margin-top: 14px;
+        color: var(--gray);
+        margin-bottom: 8px;
+    }
+
+    .font--price{
+        text-align: center;
+    }
+
+
+    .container--star{
+        width: auto;
+        height: auto;
+        visibility: visible;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .fa-star{
+        color: var(--green);
+        font-size: small;
+    }
+
+    .mobilepage{
+        width: auto;
+        height: auto;
+        visibility: visible;
+        justify-content: center;
+    }
+
+
+    .container--buttons{
+        width: auto;
+        height: auto;
+        visibility: visible;
+        justify-content: space-between;
+        margin-right: 8%;
+        margin-left: 8%;
+        margin-top: 26px;
+       
+    }
+
+    .btn--round{
+        border: none;
+        background-color: var(--lightyellow);
+        padding: 6px;
+        padding-left: 16px;
+        padding-right: 16px;
+        border-radius: 50px;
+        color: var(--green);
+        font-size: 18px;
+        box-shadow: var(--gray)2px 2px 6px;
+    }
+
+    .btn--round>*{
+        color: var(--green);
+        font-size: 18px;
+    }
+
+    .fas{
+        background-color: inherit;
+        font-size: small;
+        margin-left: 4px;
+    }
+
+
+
+
+
 }
