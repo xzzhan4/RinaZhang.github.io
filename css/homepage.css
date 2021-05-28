@@ -160,6 +160,7 @@ img{
     margin-top: 16px;
 
 
+
 }
 
 .container--listimage>*+*{
@@ -320,7 +321,7 @@ button{
     .container--homehorizontal{
         width: 100%;
         /* margin-left: 8%; */
-        margin-right: 8%;
+        /* margin-right: 8%; */
         padding-top: 0px;
 
     

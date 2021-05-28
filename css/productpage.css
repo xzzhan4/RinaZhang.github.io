@@ -1,0 +1,264 @@
+:root{
+    --green: #293932;
+    --yellow: #f0ede0;
+    --gray: #BBC1BE;
+    --darkgray: #707070;
+    --white: #ffffff;
+    --lightyellow:#FDFCF5;
+}
+/* 
+*{
+    outline: solid #f00 1px !important;
+    background: #000 !important;
+    color: #fff !important;
+} */
+
+.categoryMargin{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.container--productpagebody{
+    justify-content: space-between;
+}
+
+.container--tags{
+    color: var(--darkgray);
+    margin-top: 30px;
+    margin-bottom: 24px;
+
+}
+
+.fa-chevron-left{
+    color: var(--green);
+    margin-right: 18px;
+    font-size:large;
+}
+
+.font--tags{
+    font-weight: lighter;
+}
+
+
+
+.container--productinfo{
+    width: 65%;
+}
+
+.img--productpage{
+    height: 400px;
+}
+
+.padding--left{
+    padding-left: 16px !important;
+}
+
+.productdetail--text{
+    margin-left: 34px;
+}
+
+.font--producttitle{
+    color: var(--green);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.container--stars{
+    color: var(--green);
+    margin-top: 10px;
+}
+
+.container--stars>p>*+*{
+    margin-left: 12px;
+}
+
+.container--subinfotext{
+    margin-top: 110px;
+
+}
+
+.font--gray{
+    color: var(--darkgray);
+    font-weight: 100;
+    margin-bottom: 12px;
+}
+
+.font--pastprice{
+    color: var(--green);
+    text-decoration-line: line-through;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.font--productprice{
+    font-size: 36px;
+    color: var(--green);
+    font-weight:normal;
+    margin-bottom: 30px;
+}
+
+button>.fa-shopping-cart{
+    background-color: var(--green);
+    margin-right: 8px;
+}
+
+
+
+.productinfo--row2{
+    margin-top: 28px;
+}
+
+.container--row2buttons{
+    margin-left: 6px;
+}
+
+.productpagebtn--selected{
+    border: none;
+    background-color: var(--green);
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: var(--white);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Helvetica Neueu";
+}
+
+.productpagebtn--unselected{
+    background-color: var(--yellow);
+    border: none;
+    color: var(--darkgray);
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Helvetica Neueu";
+}
+
+.container--texts{
+    background-color: var(--lightyellow);
+    padding: 16px;
+    border-radius: 10px;
+    min-height: 200px;
+    height: fit-content;
+    /* width: 100%; */
+
+}
+
+.container--texts>p{
+    background-color: inherit;
+    color: var(--green);
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width:567px){
+
+    .container--productpagebody{
+        flex-wrap: wrap;
+    }
+
+    .productinfo--row1{
+        justify-content: center;
+    }
+
+
+    .container--productinfo{
+        width: 100%;
+    }
+
+   .productdetail--text{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        margin: 0;
+
+   }
+
+
+    .container--subinfotext{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        margin: 0;
+    }
+
+    .container--stars{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        margin: 0;
+
+    }
+
+  
+
+    .container--subinfotext>*{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+
+    }
+
+
+
+    .container--sideimage {
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        margin: 0;
+
+    }
+
+    .container--hotbooks{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        margin: 0;
+        padding-left: 0 !important;
+
+
+    }
+
+    .container--sideimage>*{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        margin: 0;
+
+    }
+
+    .container--sideimage>*>*{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        margin: 0;
+
+    }
+
+    .container--sideimage>*>*>*{
+        width: 0;
+        height: 0;
+        visibility: hidden;
+        margin: 0;
+
+    }
+
+    .productpagebtn--unselected{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .productpagebtn--selected{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+}
