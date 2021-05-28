@@ -18,6 +18,11 @@ p{
     line-height: 22px;
 }
 
+.body, html {
+    overflow-x:visible;
+}
+
+
 
 
 
@@ -284,6 +289,13 @@ button{
 
 
 @media screen and (max-width:567px){
+
+    body, html {
+        overflow-x: hidden;
+    } 
+
+
+
     .container--hotbooks{
         width: 0;
         height: 0;

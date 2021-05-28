@@ -13,6 +13,10 @@
     color: #fff !important;
 } */
 
+.body, html {
+    overflow-x: scroll;
+}
+
 .categoryMargin{
     margin-left: 8%;
     margin-right: 8%;
@@ -43,6 +47,8 @@
 
 .container--productinfo{
     width: 65%;
+    min-width: 600px;
+    
 }
 
 .img--productpage{
@@ -105,6 +111,11 @@ button>.fa-shopping-cart{
 
 
 
+.removemargin{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
 .productinfo--row2{
     margin-top: 28px;
 }
@@ -153,6 +164,63 @@ button>.fa-shopping-cart{
 
 }
 
+.container--listimage>*+*{
+    margin-left: 24px !important;
+}
+
+.container--listelement{
+    width: fit-content;
+    margin: 0;
+}
+
+.listtitle{
+    margin-top: 6px;
+    color: var(--green);
+    
+}
+
+
+.productinfo--row3{
+    margin: 0;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+
+
+.container--listimage{
+    width: 100% !important;
+    overflow-x: visible;
+}
+
+
+
+
+
+
+
+
+.margin--top{
+    margin-top: 50px;
+}
+
+.margin-bottom{
+    margin-bottom: 120px;
+}
+
+
+.fixButton{
+    display: none;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+/* .container--hotbooks{
+    width: 35%;
+    margin-left: 5%;
+} */
 
 
 
@@ -160,6 +228,44 @@ button>.fa-shopping-cart{
 
 
 @media screen and (max-width:567px){
+
+    .body, html {
+        overflow-x: hidden;
+    } 
+
+    .container--productinfo{
+        min-width: 100%;
+    }
+
+    .fixButton{
+        display: block;
+        visibility: visible;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        background-color: var(--green);
+        height: 80px;
+      
+    }
+    
+    .btn--fixed{
+        background-color: var(--green);
+        border: none;
+        text-align: center;
+        color: var(--yellow);
+        font-size: 26px;
+        display: block;
+      
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+
+    }
+    
+
+
+
 
     .container--productpagebody{
         flex-wrap: wrap;
@@ -260,5 +366,28 @@ button>.fa-shopping-cart{
         padding-right: 10px;
         padding-left: 10px;
     }
+
+
+    .productinfo--row3{
+        width: auto;
+        height: auto;
+        visibility: visible;
+        margin-top: 26px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+    
+    .font--mobiletitle{
+        color: var(--green);
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .font--mobileauthor{
+        color: var(--green);
+        margin-bottom: 12px;
+    }
+    
 
 }
