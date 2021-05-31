@@ -122,7 +122,7 @@
         </div>
 
 
-        <div class="cluster container--carttableheader">
+        <div class="cluster container--carttableheader  hiddenformobile">
             <div class="container--info">
                 <p class="margin--150">
                 Information
@@ -151,7 +151,7 @@
 
         </div>
 
-        <div class="container--withline">
+        <div class="container--withline hiddenformobile">
             <div class="cluster container--cartproduct">
            
                 <div class="cluster subcontainer--cartproductinfo">
@@ -189,12 +189,51 @@
                 </div>
             </div>
 
-            <hr>
+            <hr class="grayhr">
 
         </div>
 
-        <div class="cluster container--coupon">
-            <div class="font--coupons">
+        <div class="desktophidden mobile--cartline">
+            <div class="cluster mobile--cartproductcontainer">
+                
+                <div class="cluster ">
+                    <img class="mobile--cartimg" src="./images/Milk&Honey.jpg" alt="">
+                    <div class="mobilesub--cartinfo">
+                        <div >
+                            <p class="bold">Title</p>
+                            <p>By Author</p>
+                        </div>
+                        <div>
+                            <select name="" id="" class="select">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+            
+            
+                            </select>
+                            <p class="font--cartprice">$00.00</p>
+                        </div>
+                    
+                    </div>
+
+                </div>
+                <div class="flex--column">
+                    <i class="far fa-times-circle"></i>
+
+
+                </div>
+
+            </div>
+
+            <hr class="grayhr">
+
+
+        </div>
+
+
+
+        <div class="cluster container--coupon hiddenformobile">
+            <div class="font--coupons ">
                 <p>COUPONS</p>
             </div>
             <div class="flex--column">
@@ -208,8 +247,21 @@
 
         </div>
 
+        <div class="mobile--couponcontainer desktophidden">
+            <p class="font--coupon">COUPON</p>
+
+            <div class="cluster mobile--couponinput">
+                <input class="mobilecouponinput" type="text" name="" id="" placeholder="Enter the coupon number here">
+                <button class="mobileapplybtn">APPLY</button>
+
+            </div>
+            
+
+
+        </div>
+
         <div class="cluster container--total">
-            <div class="subcontainer--removeall">
+            <div class="subcontainer--removeall hiddenformobile">
                 <button class="btn--removeall">Remove all items from cart</button>
             </div>
 
@@ -230,10 +282,20 @@
             </div>
         </div>
 
-        <div class="cluster container--cartbuttons">
+        <div class="cluster container--cartbuttons hiddenformobile">
             <button class="btn--default">  <i class="fas fa-chevron-left btnicon"></i>BACK TO SHOPPING  </button>
             <button class="btn--apply"> SECURE CHECKOUT <i class="fas fa-chevron-right"></i> </button>
         </div>
+
+
+        <!-- mobile -->
+        <div class="fixButton">
+            <button class="btn--fixed desktophidden">SECURE CHECKOUT</button>
+    
+    
+        </div>
+
+        
 
        
 

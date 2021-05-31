@@ -305,3 +305,101 @@
     cursor: pointer; 
     font-family: "Arial black";
 }
+
+.desktophidden{
+    width: 0;
+    height: 0;
+    margin: 0;
+    visibility: hidden;
+}
+
+.grayhr{
+    border: solid 1px var(--gray);
+    border-radius: 50px;
+}
+
+
+@media screen and (max-width:567px){
+    .hiddenformobile{
+        width: 0;
+        height: 0;
+        margin: 0;
+        visibility: hidden;
+
+    }
+
+    .desktophidden{
+        width: auto;
+        height: auto;
+        margin: auto;
+        visibility: visible;
+    }
+
+   .container--total{
+       justify-content:flex-start;
+       width: 70%;
+       margin: 0;
+       margin-top: 24px;
+       margin-bottom: 60px;
+   }
+
+
+   .mobile--couponcontainer{
+       margin-top: 26px;
+   }
+
+   .mobile--couponinput{
+       margin-top: 6px;
+       justify-content: space-between;
+   }
+
+   .mobilecouponinput{
+       border: solid 1px var(--green);
+       padding: 4px;
+       padding-left: 10px;
+       border-radius: 50px;
+       width: 75%;
+   }
+
+   .mobileapplybtn{
+       background: none;
+       border: none;
+       color: var(--green);
+       font-weight: bolder;
+   }
+
+
+
+   .mobile--cartline{
+       margin-bottom: 10px;
+
+   }
+
+   .mobile--cartproductcontainer{
+       justify-content: space-between;
+       margin-bottom: 12px;
+       padding: 0 4px;
+   }
+
+   .mobilesub--cartinfo{
+       margin-left: 10px;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+   }
+
+   .mobile--cartimg{
+       width: 80px;
+       height: 120px;
+       border-radius: 10px;
+   }
+
+   .select{
+       border-radius: 50px;
+       padding: 0;
+       width: 40px;
+       margin-bottom: 4px;
+   }
+
+
+}
