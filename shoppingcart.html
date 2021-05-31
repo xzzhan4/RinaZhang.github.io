@@ -7,6 +7,8 @@
     <script src="https://kit.fontawesome.com/13adf8c7f4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Component/header.css">
     <link rel="stylesheet" href="css/shoppingcart.css">
+    <link rel="stylesheet" href="css/productpage.css">
+  
     <title>Shoppingcart</title>
 </head>
 
@@ -58,7 +60,7 @@
     
        
             <ul class="cluster header--row3">
-                <p></p>
+                <!-- <p></p>
                 <li>
                     <a href="#">Home</a>
                 </li>
@@ -82,7 +84,7 @@
                 </li>
                 <li>
                     <a href="#">FAQ</a>
-                </li>
+                </li> -->
             </ul>   
 
 
@@ -127,18 +129,18 @@
             </p>
             </div>
 
-            <div class="container--tableprice">
+            <div class="container--uninfo">
               
                     Price
          
                 
             </div>
 
-            <div class="container--tableqty">
+            <div class="container--uninfo">
                 Quantity
             </div>
 
-            <div class="container--tabletotal">
+            <div class="container--uninfo">
                 Total
             </div>
 
@@ -148,6 +150,92 @@
 
 
         </div>
+
+        <div class="container--withline">
+            <div class="cluster container--cartproduct">
+           
+                <div class="cluster subcontainer--cartproductinfo">
+                    <img src="images/Milk&Honey.jpg" alt="" class="img--cartproduct">
+                    <div class="subcontainer--cartinfotext">
+                        <p class="bold">Title</p>
+                        <p class="font--cartinfo">by Author</p>
+                        <p class="font--cartinfo">Binding and other information</p>
+
+                    </div>
+                    
+                </div>
+    
+                <div class="container--uninfo">
+                    <p class="font--cartprice">$20.00</p>
+                </div>
+    
+                <div class="container--uninfo">
+                    <select name="" id="" class="select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+    
+    
+                    </select>
+                </div>
+    
+                <div class="container--uninfo">
+                    <p class="font--cartprice">$20.00</p>
+                </div>
+    
+                <div class="subcontainer--cartdelete">
+                    <i class="far fa-times-circle"></i>
+    
+                </div>
+            </div>
+
+            <hr>
+
+        </div>
+
+        <div class="cluster container--coupon">
+            <div class="font--coupons">
+                <p>COUPONS</p>
+            </div>
+            <div class="flex--column">
+                <input type="text" class="input--coupons" placeholder="Enter the coupon number here">
+            </div>
+            <div class="flex--column">
+                <button class="btn--apply">APPLY</button>
+            </div>
+            
+            
+
+        </div>
+
+        <div class="cluster container--total">
+            <div class="subcontainer--removeall">
+                <button class="btn--removeall">Remove all items from cart</button>
+            </div>
+
+            <div class="subcontainer--total">
+                <div class="cluster container--subtotal">
+                    <p class="font--subtotal">Subtotal</p>
+                    <p class="font--subtotalnum">$60.00</p>
+                </div>
+                <div class="cluster container--subtotal">
+                    <p class="font--subtotal">Shipping</p>
+                    <p class="font--subtotalnum">$7.00</p>
+                </div>
+                <div class="cluster container--subtotal">
+                    <p class="font--carttotal">Total</p>
+                    <p class="font--carttotalnum">$60.00</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="cluster container--cartbuttons">
+            <button class="btn--default">  <i class="fas fa-chevron-left btnicon"></i>BACK TO SHOPPING  </button>
+            <button class="btn--apply"> SECURE CHECKOUT <i class="fas fa-chevron-right"></i> </button>
+        </div>
+
+       
 
 
 
