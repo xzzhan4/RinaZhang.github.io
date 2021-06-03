@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Component/header.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="css/shoppingcart.css">
+    <script src="https://kit.fontawesome.com/13adf8c7f4.js" crossorigin="anonymous"></script>
+    <title>Payment</title>
+</head>
+
+
+<header>
+    <div class="container--header">
+        <div class="cluster" style="justify-content: space-between;">
+            <div class="cluster menuside">
+                <a href="#" class="btn--menu"><i class="fas fa-bars"></i></a>
+                <p style="font-weight: bold;">QBD</p>
+            </div>
+            
+            <div class="cluster header--row1">
+                
+                <div class="header--row1--child">
+                    
+                    <a href="#" class="header--hidden">STORE LOCATION </a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i></a>   
+                </div>
+                <div>|</div>
+                <div class="header--row1--child">
+                    <a href="#" class="header--hidden">ACCOUNT </i></a>
+                    <a href="#"><i class="fas fa-user-circle"></i></a>    
+                </div>
+                <div>|</div>
+                <div class="header--row1--child">
+                    <a href="#" class="header--hidden">CHECKOUT </i></a>
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-angle-right"></i>
+                    </a>
+                    
+                </div>
+                
+            </div>
+
+        </div>
+        
+        <div class="brand">
+            QBDbooks
+        </div>
+    
+        
+    
+        <div class="cluster header--row2">
+            
+            <input class="paymentinput" type="text" placeholder="">
+            <button>
+                
+            </button>
+        </div>
+    
+       
+            <ul class="cluster header--row3">
+          
+            </ul>   
+
+    </div>
+</header>
+
+
+
+<body class="paymentbody">
+    <div class="paymentpadding">
+        <div class="container--shoppingcartheader">
+            <h2 class="font--head">CHECK OUT</h2>
+            <div class="cluster shoppingcartheader--child">
+                <div class="cluster">
+                    <i class="fas fa-chevron-left"></i>
+                    <p class="font--gray">SHOPPING CART</p>
+                    
+    
+                </div>
+    
+                <div>
+                    <!-- <p class="font--gray">Cart ID: 000000</p> -->
+    
+                </div>
+    
+            </div>
+            <hr class="greenline">
+    
+        </div>
+
+        <div class="cluster container--checkoutbody">
+            <div class="checkoutbody--left">
+                <div class="cluster container--paymentselectbar">
+                    <button class="paybtn--unselected">MEMBER</button>
+                    <button class="paybtn--selected">GUEST</button>
+        
+                </div>
+
+                <div class="cluster container--checkoutform">
+                    <div class="checkoutform--left">
+                        <div class="checkoutform--single">
+                            <p class="font--checkouttitle">CONTACT INFORMATION</p>
+
+                            <div class="cluster">
+                                <p class="font--checkoutlabel">Contact Phone</p>
+                                <p class="font--checkoutlabel font--red">*</p>
+                            </div>
+                            <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
+
+                        </div>
+
+                        <div class="checkoutform--single">
+                            <p class="font--checkouttitle">DELIEVERY DETAILS</p>
+
+                            <div class="cluster">
+                                <p class="font--checkoutlabel">Recipient Name</p>
+                                <p class="font--checkoutlabel font--red">*</p>
+                            </div>
+                            <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
+
+                            <div class="cluster">
+                                <p class="font--checkoutlabel">Delievery Address</p>
+                                <p class="font--checkoutlabel font--red">*</p>
+                            </div>
+                            <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
+
+                            <div class="cluster">
+                                <p class="font--checkoutlabel">Delievery Address Line2</p>
+                          
+                            </div>
+                            <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
+                            <div class="cluster subcontainer--post">
+                                <div>
+                                    <div class="cluster">
+                                        <p class="font--checkoutlabel">Postcode</p>
+                                        <p class="font--checkoutlabel font--red">*</p>
+                                  
+                                    </div>
+                                    <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
+                                </div>
+
+                                <div>
+                                    <div class="cluster">
+                                        <p class="font--checkoutlabel">City</p>
+                                        <p class="font--checkoutlabel font--red">*</p>
+                                  
+                                    </div>
+                                    <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="cluster">
+                                <p class="font--checkoutlabel">Suburb</p>
+                          
+                            </div>
+                      
+                            <select class="checkoutselect" name="" id=""></select>
+
+                            <div class="cluster container--checkbox">
+                                <div class="flex--column">
+                                    <input type="checkbox" class="checkbox">
+
+                                </div>
+                                
+                                <p>Allow to leave the parcel unattended at this address.</p>
+
+                            </div>
+
+
+
+                        </div>
+                        
+
+                  
+
+                    </div>
+
+                    <hr>
+
+                    <div class="checkoutform--right">
+                        
+                        <div class="checkoutform--single">
+                            <p class="font--checkouttitle">BILLING ADDRESS</p>
+
+                            <div class="cluster">
+                                <p class="font--checkoutlabel">Recipient Name</p>
+                                <p class="font--checkoutlabel font--red">*</p>
+                            </div>
+                            <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
+
+                            <div class="cluster">
+                                <p class="font--checkoutlabel">Delievery Address</p>
+                                <p class="font--checkoutlabel font--red">*</p>
+                            </div>
+                            <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
+
+                            <div class="cluster">
+                                <p class="font--checkoutlabel">Delievery Address Line2</p>
+                          
+                            </div>
+                            <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
+                            <div class="cluster subcontainer--post">
+                                <div>
+                                    <div class="cluster">
+                                        <p class="font--checkoutlabel">Postcode</p>
+                                        <p class="font--checkoutlabel font--red">*</p>
+                                  
+                                    </div>
+                                    <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
+                                </div>
+
+                                <div>
+                                    <div class="cluster">
+                                        <p class="font--checkoutlabel">City</p>
+                                        <p class="font--checkoutlabel font--red">*</p>
+                                  
+                                    </div>
+                                    <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
+
+                                </div>
+
+
+                            </div>
+
+                            <div class="cluster">
+                                <p class="font--checkoutlabel">Suburb</p>
+                          
+                            </div>
+                      
+                            <select class="checkoutselect" name="" id=""></select>
+
+                         
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="checkoutbody--right">
+
+            </div>
+            
+
+        </div>
+
+        
+
+    </div>
+    
+
+    
+</body>
+</html>
