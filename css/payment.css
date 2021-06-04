@@ -64,7 +64,7 @@
 
 
 .checkoutbody--left{
-    width: 70%;
+    width: 60%;
 }
 
 .container--checkoutform{
@@ -134,4 +134,105 @@
 
 .checkoutform--right{
     width: 45%;
+}
+
+
+.container--btnplaceorder{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    
+}
+
+.btn--placeorder{
+    width: 90%;
+    /* margin-left: 24px; */
+    border: solid;
+    border-color: var(--green);
+    border-radius: 50px;
+    background-color: var(--green);
+    color:var(--yellow);
+    padding: 8px 20px;
+    font-family: "Arial black";
+
+}
+
+
+
+
+.checkoutbody--right{
+    width: 28%;
+}
+
+.container--payorderinfoheader{
+    width: 100%;
+    text-align: center;
+}
+
+.container--payorderinfoheader>P{
+    font-size: 20px;
+    color: var(--green);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+   
+
+}
+
+.container--payorderinfoheader>hr{
+    border: solid 1px var(--gray);
+    border-radius: 50px;
+}
+
+.container--singlecheck{
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.subcontainer--checkinfo{
+    /* padding-top: 14px; */
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container--checkqty{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+}
+
+.font--multiqty{
+    margin-left: 4px;
+   
+}
+
+.font--checkoutprice{
+    margin-top: -9px;
+    font-size: 24px;
+
+    
+}
+
+.img--checkproduct{
+    width: 80px;
+    height: 120px;
+    border-radius: 10px;
+    margin-left: 18px;
+
+}
+
+
+.btn--checkdefault{
+    width: 100%;
+    border: solid;
+    border-color: var(--green);
+    border-radius: 5px;
+    background-color: var(--lightyellow);
+    color:var(--green);
+    padding: 10px 20px;
+    cursor: pointer; 
+    font-family: "Arial black";
 }
