@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="Component/header.css">
     <link rel="stylesheet" href="css/payment.css">
     <link rel="stylesheet" href="css/shoppingcart.css">
+
+    <script src="./javascript/checkout.js"></script>
     <script src="https://kit.fontawesome.com/13adf8c7f4.js" crossorigin="anonymous"></script>
     <title>Payment</title>
 </head>
@@ -192,7 +194,7 @@
 
                             <div class="cluster container--checkbox">
                                 <div class="flex--column">
-                                    <input type="checkbox" class="checkbox">
+                                    <input onclick="hideBillingAdress()" type="checkbox" class="checkbox">
 
                                 </div>
                                 
@@ -200,52 +202,57 @@
 
                             </div>
 
-                            <div class="cluster">
-                                <p class="font--checkoutlabel">Recipient Name</p>
-                                <p class="font--checkoutlabel font--red">*</p>
-                            </div>
-                            <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
-
-                            <div class="cluster">
-                                <p class="font--checkoutlabel">Delievery Address</p>
-                                <p class="font--checkoutlabel font--red">*</p>
-                            </div>
-                            <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
-
-                            <div class="cluster">
-                                <p class="font--checkoutlabel">Delievery Address Line2</p>
-                          
-                            </div>
-                            <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
-                            <div class="cluster subcontainer--post">
-                                <div>
-                                    <div class="cluster">
-                                        <p class="font--checkoutlabel">Postcode</p>
-                                        <p class="font--checkoutlabel font--red">*</p>
-                                  
-                                    </div>
-                                    <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
+                            <div id="billingadress">
+                                <div class="cluster">
+                                    <p class="font--checkoutlabel">Recipient Name</p>
+                                    <p class="font--checkoutlabel font--red">*</p>
                                 </div>
-
-                                <div>
-                                    <div class="cluster">
-                                        <p class="font--checkoutlabel">City</p>
-                                        <p class="font--checkoutlabel font--red">*</p>
-                                  
-                                    </div>
-                                    <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
-
+                                <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
+    
+                                <div class="cluster">
+                                    <p class="font--checkoutlabel">Delievery Address</p>
+                                    <p class="font--checkoutlabel font--red">*</p>
                                 </div>
-
-
-                            </div>
-
-                            <div class="cluster">
-                                <p class="font--checkoutlabel">Suburb</p>
+                                <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
+    
+                                <div class="cluster">
+                                    <p class="font--checkoutlabel">Delievery Address Line2</p>
+                              
+                                </div>
+                                <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
+                                <div class="cluster subcontainer--post">
+                                    <div>
+                                        <div class="cluster">
+                                            <p class="font--checkoutlabel">Postcode</p>
+                                            <p class="font--checkoutlabel font--red">*</p>
+                                      
+                                        </div>
+                                        <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
+                                    </div>
+    
+                                    <div>
+                                        <div class="cluster">
+                                            <p class="font--checkoutlabel">City</p>
+                                            <p class="font--checkoutlabel font--red">*</p>
+                                      
+                                        </div>
+                                        <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
+    
+                                    </div>
+    
+    
+                                </div>
+    
+                                <div class="cluster">
+                                    <p class="font--checkoutlabel">Suburb</p>
+                              
+                                </div>
                           
+                                <select class="checkoutselect" name="" id=""></select>
+
                             </div>
-                      
-                            <select class="checkoutselect" name="" id=""></select>
+
+                            
 
                          
 
@@ -256,12 +263,12 @@
                         <div class="checkoutform--single">
                             <p class="font--checkouttitle"> PAYMENT METHOD</p>
 
-                            <select class="checkoutselect" name="" id="">
-                                <option value="">Credit card</option>
-                                <option value="">Paypal</option>
+                            <select class="checkoutselect" name="" id="paymethod" onchange="payby()">
+                                <option value="card">Credit card</option>
+                                <option value="paypal">Paypal</option>
                             </select>
 
-                            <div class="container--paybycard">
+                            <div class="container--paybycard" id="paybycard">
                                 <div class="cluster">
                                     <p class="font--checkoutlabel">Card Holder Name</p>
                                     <p class="font--checkoutlabel font--red">*</p>
