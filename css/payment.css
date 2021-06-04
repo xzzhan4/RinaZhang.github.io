@@ -7,6 +7,17 @@
     --lightyellow:#F8F7EF;
 }
 
+/* *{
+    outline: solid #f00 1px !important;
+    background: #000 !important;
+    color: #fff !important;
+} */
+
+.body, html {
+
+    overflow-x: scroll;
+}
+
 
 .paymentinput{
     background-color: var(--green) !important;
@@ -94,6 +105,7 @@
 .checkoutinput{
     border: solid 1px var(--green);
     border-radius: 50px;
+    box-sizing: border-box;
     width: 100%;
     padding: 8px;
     padding-left: 10px;
@@ -146,11 +158,11 @@
 }
 
 .btn--placeorder{
-    width: 90%;
+    width: 100%;
     /* margin-left: 24px; */
     border: solid;
     border-color: var(--green);
-    border-radius: 50px;
+    border-radius: 5px;
     background-color: var(--green);
     color:var(--yellow);
     padding: 8px 20px;
@@ -236,3 +248,39 @@
     cursor: pointer; 
     font-family: "Arial black";
 }
+
+@media screen and (max-width:567px){
+    .body, html {
+
+        overflow-x: hidden;
+    }
+
+    .checkoutbody--left{
+        width: 100%;
+        /* flex-direction: column !important; */
+    }
+
+    .container--checkoutform{
+        flex-direction: column;
+    }
+
+    .checkoutform--left,.checkoutform--right{
+        width: 100%;
+    }
+
+    .container--btnplaceorder{
+        width: 100%;
+    }
+
+    .btn--placeorder{
+        padding: 14px;
+    }
+
+    /* .paymentinput{
+        ba
+    } */
+
+}
+
+
+
