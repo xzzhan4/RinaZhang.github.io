@@ -56,6 +56,15 @@
     border: none;
     color: var(--green);
     font-size: 20px;
+    cursor: pointer;
+}
+
+.paybtn--selected>a:hover{
+    color: var(--green) !important;
+}
+
+.paybtn--unselected>a:hover{
+    color: var(--green) !important;
 }
 
 .paybtn--unselected{
@@ -63,6 +72,7 @@
     border: none;
     color: var(--darkgray);
     font-size: 18px;
+    cursor: pointer;
 
 }
 
@@ -167,7 +177,12 @@
     color:var(--yellow);
     padding: 8px 20px;
     font-family: "Arial black";
+    cursor: pointer;
 
+}
+
+.btn--placeorder>a{
+    color: var(--yellow);
 }
 
 
@@ -247,6 +262,43 @@
     padding: 10px 20px;
     cursor: pointer; 
     font-family: "Arial black";
+}
+
+.btn--checkdefault>a{
+    color: var(--green);
+}
+
+.btn--checkdefault>a:hover{
+    color: var(--green) !important;
+}
+
+.container--btnlogin{
+    margin-bottom: 20px ;
+}
+
+.container--orline{
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.hr--or{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+}
+
+.hr--or>hr{
+    border: solid 1px var(--gray);
+    border-radius: 50px;
+}
+
+
+
+
+
+.enteredinput{
+    border: none !important;
 }
 
 @media screen and (max-width:567px){

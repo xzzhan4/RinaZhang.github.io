@@ -11,7 +11,7 @@
 
     <script src="./javascript/checkout.js"></script>
     <script src="https://kit.fontawesome.com/13adf8c7f4.js" crossorigin="anonymous"></script>
-    <title>Payment</title>
+    <title>CheckoutAsMember</title>
 </head>
 
 
@@ -98,25 +98,57 @@
         <div class="cluster container--checkoutbody">
             <div class="checkoutbody--left">
                 <div class="cluster container--paymentselectbar">
-                    <button class="paybtn--unselected" ><a class="paybtn--unselected" href="./membercheckout.html">MEMBER</a></button>
-                    <button class="paybtn--selected">GUEST</button>
+                    <button class="paybtn--selected">MEMBER</button>
+                    <button class="paybtn--unselected"><a class="paybtn--unselected" href="./payment.html">GUEST</a></button>
         
                 </div>
 
+                
+
                 <div class="cluster container--checkoutform">
                     <div class="checkoutform--left">
+
                         <div class="checkoutform--single">
-                            <p class="font--checkouttitle">CONTACT INFORMATION</p>
+                            <!-- <p class="font--checkouttitle">Pleas login first.</p> -->
 
                             <div class="cluster">
-                                <p class="font--checkoutlabel">Contact Phone</p>
+                                <p class="font--checkoutlabel">E-mail Address</p>
                                 <p class="font--checkoutlabel font--red">*</p>
                             </div>
-                            <input class="checkoutinput" type="text" placeholder="e.x 0400000000">
+                            <input class="checkoutinput" type="text" placeholder="">
+
+                            <div class="cluster">
+                                <p class="font--checkoutlabel">Password</p>
+                                <p class="font--checkoutlabel font--red">*</p>
+                            </div>
+                            <input class="checkoutinput" type="text" placeholder="">
 
                         </div>
 
-                        <div class="checkoutform--single">
+                        <div class="container--btnlogin">
+                            <button class=" btn--placeorder "><a href="./loggedMemberCheckout.html">LOG IN</a></button>
+                        </div>
+                        <div class="cluster container--orline">
+                            <div class="hr--or">
+                                <hr>
+                            </div>
+                     
+                            <p >OR</p>
+                            <div class="hr--or">
+                                <hr>
+                            </div>
+
+                        </div>
+
+
+                        <div>
+                            <button class="btn--checkdefault"> SIGN UP</button>
+                        </div>
+
+
+                        
+
+                        <!-- <div class="checkoutform--single">
                             <p class="font--checkouttitle">DELIEVERY DETAILS</p>
 
                             <div class="cluster">
@@ -178,18 +210,18 @@
 
 
 
-                        </div>
+                        </div> -->
                         
 
                   
 
                     </div>
 
-                    <hr class="hiddenformobile">
+                    <!-- <hr class="hiddenformobile"> -->
 
                     <div class="checkoutform--right">
                         
-                        <div class="checkoutform--single">
+                        <!-- <div class="checkoutform--single">
                             <p class="font--checkouttitle">BILLING ADDRESS</p>
 
                             <div class="cluster container--checkbox">
@@ -258,9 +290,9 @@
 
 
 
-                        </div>
+                        </div> -->
 
-                        <div class="checkoutform--single">
+                        <!-- <div class="checkoutform--single">
                             <p class="font--checkouttitle"> PAYMENT METHOD</p>
 
                             <select class="checkoutselect" name="" id="paymethod" onchange="payby()">
@@ -312,11 +344,11 @@
 
                        
 
-                        </div>
-
+                        </div> -->
+<!-- 
                         <div class="container--btnplaceorder">
                             <button class=" btn--placeorder">PLACE ORDER</button>
-                        </div>
+                        </div> -->
 
                     </div>
 
