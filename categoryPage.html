@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/categorypage.css">
    
     <script src="https://kit.fontawesome.com/13adf8c7f4.js" crossorigin="anonymous"></script>
+    <script src="./javascript/mobilemenu.js"></script>
 
 
     <title>Fiction</title>
@@ -16,10 +17,64 @@
 
 
 <header>
+
+    <div class="mobilemenu" id="mobilemenu">
+        <div class="mobilemenu--top">
+            <div class="container--closemenu">
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </div>
+
+            <div class="container--hello">
+                <p class="font-hello">YOU HAVEN'T LOGGED IN.</p>
+                <div class="cluster container--loginbtns">
+                    <button>LOG IN</button>
+                    <button>SIGN UP</button>
+
+                </div>
+            </div>
+           
+            
+        </div>
+
+        <div class="mobilemenu--bottom">
+            <div class="container--mobilemenuitems">
+                <p>SALE</p>
+                <hr>
+                <p>CATEGORIES</p>
+                <div class="container--mobilemenusubitems">
+                    <a href="./categoryPage.html">Fiction</a>
+                    <p>Non-Fiction</p>
+                    <p>Children's</p>
+                </div>
+                <hr>
+                
+                <p>Australian Geographic</p>
+                <hr>
+                <p>VOUCHERS</p>
+                <hr>
+                <p>EVENTS</p>
+                <hr>
+                <p>CONTACT</p>
+                <hr>
+                <p>FAQ</p>
+                <hr>
+                <p>7|BOOK CLUB</p>
+                <hr>
+            </div>
+
+            
+
+        </div>
+      
+
+
+    </div>
+
+
     <div class="container--header">
         <div class="cluster" style="justify-content: space-between;">
             <div class="cluster menuside">
-                <a href="#" class="btn--menu"><i class="fas fa-bars"></i></a>
+                <a onclick="openmenu()" href="#" class="btn--menu"><i class="fas fa-bars"></i></a>
                 <p style="font-weight: bold;">QBD</p>
             </div>
             
