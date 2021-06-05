@@ -288,6 +288,55 @@ button{
 }
 
 
+/*drop down*/
+.font--dropdown{
+    background-color: var(--green);
+    color: var(--yellow);
+    font-weight: bold;
+
+
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    color: black;
+    background: var(--white);
+    padding: 4px;
+    border-radius: 2px;
+    width:fit-content;
+    min-width: 160px;
+
+}
+
+.dropdown-content>*{
+    margin: 8px;
+    
+}
+
+.dropdown-content>a{
+    background: none;
+    color: var(--green);
+    transition: 0.5s;
+}
+
+.dropdown-content>a:hover{
+    font-weight: bold;
+    color: var(--green) !important;
+    
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+}
+
+
+
+
+
 @media screen and (max-width:567px){
 
     body, html {
