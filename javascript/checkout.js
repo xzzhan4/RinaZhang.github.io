@@ -10,10 +10,16 @@ function hideBillingAdress(){
 }
 
 function payby(){
-    var sel = document.getElementById('paymethod').value;
-    if(document.getElementById('paymethod').nodeValue === 'paypal'){
+    if(document.getElementById('paybycard').style.display != "none"){
         document.getElementById('paybycard').style.display = "none";
+
+    }else{
+        document.getElementById('paybycard').style.display = "block";
+        
     }
+    
+    
+  
 
     
 }
