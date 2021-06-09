@@ -357,3 +357,95 @@
 
 
 }
+
+.modal--itemadded{
+    display: none;
+    position: fixed;
+    z-index: 1;
+ 
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: none;
+
+
+    /* background-color: black; */
+}
+
+.modal--maintext{
+    margin-bottom: 22px;
+    font-weight: bold;
+    color: var(--green);
+    font-size: 20px;
+    margin-top: 12px;
+
+}
+
+
+
+.modalcontent{
+    border: solid 1px var(--darkgray);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 24px;
+    background: var(--lightyellow);
+    border-radius: 10px;
+}
+
+.modalcontent>*{
+    background: var(--lightyellow);
+}
+
+.modalcontent>*>*{
+    background: var(--lightyellow);
+}
+
+.modal--btn{
+    justify-content: space-between;
+}
+
+.modal--defautbtn{
+    background-color: var(--lightyellow) !important;
+}
+
+.modal--primarybtn{
+    cursor: pointer;
+
+}
+
+.modal--defautbtn>.fas{
+    background: inherit;
+}
+
+.modal--primarybtn>a{
+    background: inherit;
+    color: var(--lightyellow);
+    transition: 0.5s;
+}
+.modal--primarybtn>a>.fas{
+    font-size: small;
+    background: var(--green);
+}
+
+.modal--primarybtn>a:hover{
+    color: var(--yellow) !important;
+}
+
+.modal--productlst{
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.modal--productlst>*{
+    margin: 8px;
+}
+
+.modal--image{
+    width: 100px;
+    height: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+}

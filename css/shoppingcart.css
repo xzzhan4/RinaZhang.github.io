@@ -325,6 +325,11 @@
 
 
 @media screen and (max-width:567px){
+    .subcontainer--total{
+        width: 100%;
+    }
+
+
     .hiddenformobile{
         width: 0;
         height: 0;
@@ -342,7 +347,7 @@
 
    .container--total{
        justify-content:flex-start;
-       width: 70%;
+       width: 100%;
        margin: 0;
        margin-top: 24px;
        margin-bottom: 60px;
