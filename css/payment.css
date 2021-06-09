@@ -293,6 +293,15 @@
     border-radius: 50px;
 }
 
+.backtocart{
+    color: var(--green);
+    margin-right: 8px;
+}
+
+.backtocart:hover{
+    color: var(--green) !important;
+}
+
 
 
 
@@ -331,6 +340,10 @@
     /* .paymentinput{
         ba
     } */
+
+    .paymentpadding{
+        margin-top: 80px;
+    }
 
 }
 

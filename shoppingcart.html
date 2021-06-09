@@ -104,11 +104,22 @@
         <div class="container--shoppingcartheader">
             <h2 class="font--head">SHOPPING CART</h2>
             <div class="cluster shoppingcartheader--child">
-                <div class="cluster">
+                <!-- <div class="cluster">
                     <i class="fas fa-chevron-left"></i>
                     <p class="font--gray">HOME</p>
                     
     
+                </div> -->
+
+                <div class="cluster">
+                    <a class="backtocart" href="./homepage.html">
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+
+                    <a href="./homepage.html">
+                        <p class="font--gray">HOME</p>
+                    </a>
+   
                 </div>
     
                 <div>
@@ -284,13 +295,18 @@
 
         <div class="cluster container--cartbuttons hiddenformobile">
             <button class="btn--default">  <i class="fas fa-chevron-left btnicon"></i>BACK TO SHOPPING  </button>
-            <button class="btn--apply"> SECURE CHECKOUT <i class="fas fa-chevron-right"></i> </button>
+            <button class="btn--apply">
+                <a href="./payment.html">SECURE CHECKOUT <i class="fas fa-chevron-right"></i> </a>
+                 </button>
         </div>
 
 
         <!-- mobile -->
         <div class="fixButton">
-            <button class="btn--fixed desktophidden">SECURE CHECKOUT</button>
+            <button class="btn--fixed desktophidden">
+                <a href="./payment.html">SECURE CHECKOUT</a>
+                
+            </button>
     
     
         </div>

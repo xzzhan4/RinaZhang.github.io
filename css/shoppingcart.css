@@ -205,7 +205,16 @@
     color:var(--yellow);
     padding: 8px 20px;
     font-family: "Arial black";
+    cursor:pointer;
+
+
+
+
     /* height: 34px; */
+}
+
+.btn--apply>a{
+    color: var(--lightyellow);
 }
 
 .flex--column{
