@@ -243,9 +243,9 @@ button>.fa-shopping-cart{
         position: fixed;
         bottom: 0;
         right: 0;
-        width: 100%;
+        width: 100% !important;
         background-color: var(--green);
-        height: 80px;
+        height: 80px !important;
       
     }
     

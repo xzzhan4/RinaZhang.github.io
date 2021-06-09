@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="./css/categorypage.css">
     <link rel="stylesheet" href="./css/homepage.css">
     <link rel="stylesheet" href="./css/productpage.css">
+    <link rel="stylesheet" href="./css/shoppingcart.css">
    
     <script src="https://kit.fontawesome.com/13adf8c7f4.js" crossorigin="anonymous"></script>
     <script src="./javascript/mobilemenu.js"></script>
+    <script src="./javascript/modal.js"></script>
     <title>Milk And Honey</title>
 </head>
 
@@ -90,13 +92,45 @@
                     <a href="#"><i class="fas fa-user-circle"></i></a>    
                 </div>
                 <div>|</div>
-                <div class="header--row1--child">
-                    <a href="#" class="header--hidden">CHECKOUT </i></a>
-                    <a href="#">
-                        <i class="fas fa-shopping-cart"></i>
-                        <i class="fas fa-angle-right"></i>
-                    </a>
+                <div class="header--row1--child dropdown">
                     
+                    <a href="./shoppingcart.html" class="header--hidden">CHECKOUT </i>
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-angle-right"></i></a>
+                    <a href="#">
+                        
+                    </a>
+
+                    <div id="emptycart" class="dropdown-content shoppingcart--dropdown">
+                        CART IS EMPTY
+                    </div>
+                    <div id="normalcart" class="dropdown-content shoppingcart--dropdown">
+                        <div class="dropdown--cartcontent">
+                            <img class="dropdown--image" src="./images/Milk&Honey.jpg" alt="">
+                            <div class="subcontainer--cartdropdown">
+                                
+                                <p>Honey And Milk</p>
+                                <p>$00.00</p>
+                            </div>
+                            
+                            
+                        </div>
+                        <hr>
+                        <div class="subtotal">
+                            <p>Subtotal:</p>
+                            <p class="price">$00.00</p>
+                        </div>
+                        <div class="container--dropbutn">
+                            <button class="dropout--button">
+                                <a href="./shoppingcart.html">
+                                    CHECKOUT
+                                </a>
+                            </button>
+                        </div>
+
+                    </div>
+
+                   
                 </div>
                 
             </div>
@@ -201,6 +235,41 @@
 
 <body >
 
+    <div id="modal--itemadded" class="modal--itemadded">
+        <div class="modalcontent">
+            <div class="modal--maintext">
+                <p>
+                    ITEM ADDED TO YOUR CART!
+                </p>
+            </div>
+    
+            <div class="modal--secondarytext">
+                <p>
+                    YOU MAY ALSO LIKE
+                </p>
+            </div>
+            <div class="cluster modal--productlst">
+                <img src="./images/Milk&Honey.jpg" alt="" class="modal--image">
+                <img src="./images/Milk&Honey.jpg" alt="" class="modal--image">
+                <img src="./images/Milk&Honey.jpg" alt="" class="modal--image">
+                <img src="./images/Milk&Honey.jpg" alt="" class="modal--image">
+              
+            </div>
+            <div class="cluster modal--btn">
+                <button class="btn--default modal--defautbtn" onclick="closeModal()">
+                    <i class="fas fa-chevron-left"></i> CONTINUE SHOPPING
+                </button>
+    
+                <button class="btn--apply modal--primarybtn">
+                    <a href="./shoppingcart.html">CHECKOUT<i class="fas fa-chevron-right"></i></a>
+                    
+                </button>
+            </div>
+
+        </div>
+        
+    </div>
+
     <div class="categoryMargin">
         <div class="cluster container--tags">
             <i class="fas fa-chevron-left"></i>
@@ -237,7 +306,7 @@
                             <p class="font--gray">Pages: 300</p>
                             <p class="font--pastprice">$30.00</p>
                             <p class="font--productprice">$21.00</p>
-                            <button class="btn--Primary"><i class="fas fa-shopping-cart"></i>BUY NOW</button>
+                            <button onclick="openModal(),showdropdown()" class="btn--Primary"><i class="fas fa-shopping-cart"></i>BUY NOW</button>
                         </div>
     
             
