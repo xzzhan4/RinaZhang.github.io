@@ -209,7 +209,7 @@ li{
 }
 
 .dropdown:hover #normalcart{
-    z-index: -1;
+    z-index: -6;
 
 }
 
