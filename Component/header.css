@@ -327,6 +327,29 @@ li{
 
 
 @media screen and (max-width: 567px){
+
+    header{
+    
+        width: 100%;
+        position: fixed;
+        top: 0;
+    }
+
+    .container--homepage {
+        margin-top: 120px !important;
+    }
+
+    .container--catetitle{
+        margin-top: 120px !important;
+    }
+
+    .categoryMargin, .margin{
+        margin-top: 120px;
+    }
+
+    
+
+
     *{
         margin:0;
     }
