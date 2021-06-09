@@ -262,6 +262,10 @@ button>.fa-shopping-cart{
         margin-top: 20px;
 
     }
+
+    .btn--fixed>a{
+        color: var(--lightyellow);
+    }
     
 
 

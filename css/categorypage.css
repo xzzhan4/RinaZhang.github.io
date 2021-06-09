@@ -312,7 +312,7 @@
 
     .mobilepage{
         width: auto;
-        height: auto;
+        height:40px;
         visibility: visible;
         justify-content: center;
     }
@@ -350,6 +350,11 @@
         background-color: inherit;
         font-size: small;
         margin-left: 4px;
+    }
+
+
+    .modal--itemadded{
+        visibility: hidden;
     }
 
 
