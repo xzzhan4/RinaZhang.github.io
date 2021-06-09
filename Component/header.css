@@ -392,6 +392,10 @@ li{
     margin-top: 4px;
 }
 
+.fa-search{
+    cursor: pointer;
+}
+
 
 
 @media screen and (max-width: 567px){
