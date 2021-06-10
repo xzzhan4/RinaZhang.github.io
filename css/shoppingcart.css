@@ -213,8 +213,16 @@
     /* height: 34px; */
 }
 
-.btn--apply>a{
-    color: var(--lightyellow);
+.btn--apply:hover{
+    box-shadow: var(--gray) 2px 2px 2px;
+}
+
+.btn--apply>*{
+    color: var(--yellow);
+}
+
+.btn--apply>a:hover{
+    color: var(--white);
 }
 
 .flex--column{
@@ -318,6 +326,10 @@
     cursor: pointer; 
     font-family: "Arial black";
    
+}
+
+.btn--default:hover{
+    box-shadow: var(--gray) 2px 2px 2px;
 }
 
 .desktophidden{

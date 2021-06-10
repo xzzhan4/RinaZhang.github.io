@@ -178,12 +178,22 @@
     padding: 8px 20px;
     font-family: "Arial black";
     cursor: pointer;
+    box-shadow: none;
+    transition: 0.5s;
 
 }
 
-.btn--placeorder>a{
-    color: var(--yellow);
+/* .btn--placeorder>a{
+    color: var(--gray);
+} */
+
+.btn--placeorder:hover{
+    
+    box-shadow: var(--gray) 2px 2px 2px;
+    color: var(--white);
 }
+
+
 
 
 
