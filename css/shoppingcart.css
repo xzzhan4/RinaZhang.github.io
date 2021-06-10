@@ -1,5 +1,6 @@
 :root{
     --green: #293932;
+    --darkgreen: #1c2923;
     --yellow: #f0ede0;
     --gray: #BBC1BE;
     --darkgray: #707070;
@@ -215,6 +216,7 @@
 
 .btn--apply:hover{
     box-shadow: var(--gray) 2px 2px 2px;
+    background-color: var(--darkgreen);
 }
 
 .btn--apply>*{
@@ -326,6 +328,14 @@
     cursor: pointer; 
     font-family: "Arial black";
    
+}
+
+.btn--default>a{
+    color: var(--green);
+}
+
+.btn--default>a:hover{
+    color: var(--green) !important;
 }
 
 .btn--default:hover{

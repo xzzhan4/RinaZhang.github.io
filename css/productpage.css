@@ -194,6 +194,11 @@ button>.fa-shopping-cart{
     overflow-x: visible;
 }
 
+.btn--Primary:hover{
+    background-color: #1c2923;
+    box-shadow: var(--gray) 2px 2px 2px;
+}
+
 
 
 
