@@ -11,7 +11,8 @@ function hideBillingAdress(){
 
 function payby(){
     if(document.getElementById('paybycard').style.display != "none"){
-        document.getElementById('paybycard').style.display = "none";
+        // document.getElementById('paybycard').style.display = "none";
+        document.getElementById('paybycard').innerHTML = "You will be directed to PayPal to complete the purchase.";
 
     }else{
         document.getElementById('paybycard').style.display = "block";
